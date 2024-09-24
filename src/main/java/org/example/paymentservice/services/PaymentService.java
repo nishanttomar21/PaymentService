@@ -32,7 +32,7 @@ public class PaymentService {
         Long price = 123L;
 
         // 2. Get a payment gateway based upon a `strategy`
-        PaymentGatewayAdapter paymentGatewayAdapter = paymentGatewayStrategy.getPaymentGateway();
+        PaymentGatewayAdapter paymentGatewayAdapter = paymentGatewayStrategy.getBestPaymentGateway();
 
 
         String url = "";

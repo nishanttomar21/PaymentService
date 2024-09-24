@@ -108,7 +108,7 @@ public class PaymentGatewayStrategy {
         this.stripePaymentGatewayAdapter = stripePaymentGatewayAdapter;
     }
 
-    public PaymentGatewayAdapter getPaymentGateway() {
+    public PaymentGatewayAdapter getBestPaymentGateway() {
         return stripePaymentGatewayAdapter;
 
         // Use some algorithm/strategy to decide which payment gateway to use
